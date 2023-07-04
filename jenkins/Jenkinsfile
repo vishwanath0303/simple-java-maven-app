@@ -9,9 +9,9 @@ pipeline{
         
         stage('maven build'){
             steps{
-               // sh 'simple-java-maven-app'
+                // bat 'simple-java-maven-app'
                 
-                // sh 'cd ${Workspace}\HelloWorld-Springboot-App'
+             bat 'cd ${Workspace}\simple-java-maven-app'
                  bat 'mvn clean package'
             }
         }
